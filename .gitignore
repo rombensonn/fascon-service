@@ -1,0 +1,4 @@
+leads/*.csv
+leads/*.log
+leads/php_errors.log
+.DS_Store

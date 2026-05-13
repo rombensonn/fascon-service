@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /leads/
+Disallow: /config.php
+
+Sitemap: https://rombensonn.github.io/fascon-service/sitemap.xml
+Host: rombensonn.github.io

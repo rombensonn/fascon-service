@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+  <title id="title">Схема чистого технического центра</title>
+  <desc id="desc">Схематичный светлый бокс автосервиса с автомобилем, подъемником и зоной приемки.</desc>
+  <rect width="720" height="560" fill="#FFFFFF"/>
+  <path d="M0 0h720v560H0z" fill="#F8FAFC"/>
+  <path d="M40 70h640M40 130h640M40 190h640M40 250h640M40 310h640M40 370h640M40 430h640M40 490h640" stroke="#E2E8F0" stroke-width="1"/>
+  <path d="M80 45v470M160 45v470M240 45v470M320 45v470M400 45v470M480 45v470M560 45v470M640 45v470" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="70" y="76" width="580" height="360" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="100" y="105" width="150" height="74" rx="8" fill="#DBEAFE" stroke="#93C5FD"/>
+  <rect x="277" y="105" width="150" height="74" rx="8" fill="#E0F2FE" stroke="#7DD3FC"/>
+  <rect x="454" y="105" width="150" height="74" rx="8" fill="#F1F5F9" stroke="#CBD5E1"/>
+  <path d="M122 142h106M298 142h106M475 142h106" stroke="#0F172A" stroke-width="6" stroke-linecap="round"/>
+  <path d="M128 360h455" stroke="#0F172A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M202 360l33-82c7-17 22-27 40-27h143c20 0 35 10 45 27l43 82H202Z" fill="#2563EB"/>
+  <path d="M252 279h166c13 0 23 7 30 18l26 45H220l22-45c4-11 6-18 10-18Z" fill="#38BDF8"/>
+  <path d="M271 289h58v39h-82l16-31c2-5 3-8 8-8ZM344 289h65c9 0 16 5 21 13l15 26H344v-39Z" fill="#E0F2FE"/>
+  <circle cx="273" cy="366" r="36" fill="#0F172A"/>
+  <circle cx="273" cy="366" r="15" fill="#94A3B8"/>
+  <circle cx="461" cy="366" r="36" fill="#0F172A"/>
+  <circle cx="461" cy="366" r="15" fill="#94A3B8"/>
+  <path d="M156 218h38v142h-38V218ZM520 218h38v142h-38V218Z" fill="#CBD5E1"/>
+  <path d="M150 218h414" stroke="#64748B" stroke-width="10" stroke-linecap="round"/>
+  <path d="M186 218v-52M530 218v-52" stroke="#64748B" stroke-width="8" stroke-linecap="round"/>
+  <rect x="96" y="456" width="166" height="42" rx="8" fill="#0F172A"/>
+  <rect x="286" y="456" width="146" height="42" rx="8" fill="#2563EB"/>
+  <rect x="456" y="456" width="166" height="42" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <path d="M125 477h108M315 477h88M485 477h108" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M485 477h108" stroke="#2563EB" stroke-width="6" stroke-linecap="round"/>
+</svg>
