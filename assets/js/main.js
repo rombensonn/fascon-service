@@ -5,6 +5,7 @@
   const header = document.querySelector('[data-header]');
   const form = document.querySelector('[data-lead-form]');
   const pageField = document.querySelector('[data-page-field]');
+  const status = form ? form.querySelector('[data-form-status]') : null;
 
   if (pageField) {
     pageField.value = window.location.href;
@@ -76,11 +77,37 @@
     revealItems.forEach((item) => item.classList.add('is-visible'));
   }
 
+  const quickActionLinks = document.querySelectorAll('[data-quick-type], [data-scroll-target]');
+  const requestTypeField = document.getElementById('request_type');
+
+  quickActionLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      const targetId = link.dataset.scrollTarget || 'request';
+      const target = document.getElementById(targetId);
+      const selectedType = link.dataset.quickType;
+
+      window.setTimeout(() => {
+        if (target) {
+          target.scrollIntoView({ block: 'start' });
+        }
+
+        if (selectedType && requestTypeField) {
+          requestTypeField.value = selectedType;
+          requestTypeField.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+
+        if (selectedType && status) {
+          status.textContent = `Выбрано направление: ${selectedType}. Оставьте телефон — специалист подскажет следующий шаг.`;
+          status.classList.remove('is-success', 'is-error');
+        }
+      }, 80);
+    });
+  });
+
   if (!form) {
     return;
   }
 
-  const status = form.querySelector('[data-form-status]');
   const submitButton = form.querySelector('[data-submit-button]');
 
   const setStatus = (message, type) => {
