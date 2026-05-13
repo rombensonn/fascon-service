@@ -1396,8 +1396,8 @@ details p {
     bottom: 10px;
     left: 10px;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 4px;
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+    gap: 6px;
     padding: 6px;
     padding-bottom: calc(6px + env(safe-area-inset-bottom));
     border: 1px solid rgba(15, 23, 42, 0.10);
@@ -1414,13 +1414,13 @@ details p {
     justify-content: center;
     border-radius: var(--radius-sm);
     color: var(--color-text);
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 760;
     line-height: 1.15;
     text-align: center;
   }
 
-  .mobile-bottom-bar a:nth-child(3) {
+  .mobile-bottom-bar a:last-child {
     background: var(--color-accent);
     color: #ffffff;
   }
@@ -1481,7 +1481,7 @@ details p {
   }
 
   .mobile-bottom-bar a {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 
@@ -1504,7 +1504,7 @@ details p {
   }
 
   .mobile-bottom-bar a {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -2230,7 +2230,7 @@ summary {
   transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
 }
 
-.mobile-bottom-bar a:nth-child(3) {
+.mobile-bottom-bar a:last-child {
   background: var(--color-accent);
 }
 
@@ -2436,7 +2436,19 @@ summary {
   }
 
   .tire-grid {
+    gap: 24px;
     min-height: auto;
+  }
+
+  .tire-section .quote-card {
+    align-self: stretch;
+  }
+
+  .tire-section .quote-card img {
+    display: block;
+    height: clamp(150px, 42vw, 210px);
+    aspect-ratio: auto;
+    object-position: center 54%;
   }
 
   .lead-form::before {

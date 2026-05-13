@@ -637,10 +637,8 @@ $ogImage = $baseUrl . '/assets/img/fascon-service-hero.jpg';
   </footer>
 
   <nav class="mobile-bottom-bar" aria-label="Быстрые действия">
-    <a href="#request" data-quick-type="Техцентр / приемка">Приемка</a>
-    <a href="#request" data-quick-type="Шиномонтаж">Шиномонтаж</a>
-    <a href="#request" data-scroll-target="request">Заявка</a>
-    <a href="#contacts" data-scroll-target="contacts">Карта</a>
+    <a href="tel:+79055554541">Позвонить</a>
+    <a href="#request" data-scroll-target="request">Оставить заявку</a>
   </nav>
 
   <script src="/assets/js/main.js" defer></script>
